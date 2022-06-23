@@ -43,9 +43,9 @@ public:
             }
             if (table.what(0, 2) == table.O)
             {
-                if (table.what(2, 0) == Table::BLANK)
+                if (table.what(0, 1) == Table::BLANK)
                 {
-                    table.putO(2, 0);
+                    table.putO(0, 1);
                     return true;
                 }
             }
@@ -77,9 +77,9 @@ public:
         {
             if (table.what(2, 0) == table.O)
             {
-                if (table.what(2, 0) == Table::BLANK)
+                if (table.what(0, 0) == Table::BLANK)
                 {
-                    table.putO(2, 0);
+                    table.putO(0, 0);
                     return true;
                 }
             }
@@ -180,7 +180,7 @@ public:
 
         //  | |
         //-------
-        // |O|
+        //  |O|
         //-------
         //  | |
 
